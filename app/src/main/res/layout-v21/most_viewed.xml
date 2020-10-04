@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="140dp"
+    android:layout_margin="5dp"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingRight="1dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/imageSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="student dets" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/NameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DescView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameView"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/SchoolView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DescView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="1dp"
+            android:gravity="start"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
